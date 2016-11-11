@@ -3,7 +3,7 @@
 mkdir -p /src/openssl
 mkdir -p /src/ruby
 mkdir -p /src/chruby
-mkdir -p /src/automake
+mkdir -p /src/autoconf
 
 mkdir -p /opt/openssl
 mkdir -p /opt/rubies
@@ -16,7 +16,7 @@ curl -s https://www.openssl.org/source/openssl-1.0.2j.tar.gz | tar -C /src/opens
       shared no-ssl2 darwin64-x86_64-cc && \
     make && make install_sw
 
-curl -s http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz | tar -C /src/autoamke/ -xzf - && \
+curl -s http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz | tar -C /src/autoconf/ -xzf - && \
     cd autoconf-2.69 \
     sh configure --prefix /opt/autoconf \
     make install
