@@ -1,4 +1,4 @@
 test:
   override:
-    - echo "Really, you're really expecting tests for this repo?
+    - echo "Really, you're really expecting tests for this repo?"
     
