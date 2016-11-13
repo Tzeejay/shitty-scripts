@@ -36,4 +36,4 @@ curl -s https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz | tar -C /src
 
 curl -s https://curl.haxx.se/ca/cacert.pem > /opt/openssl/openssl-1.0.2/certs/cert.pem
 
-echo 'export SSL_CERT_FILE="/opt/openssl/openssl-1.0.2/certs/cert.pem" > /Users/cj/.bashrc'
+echo "export SSL_CERT_FILE=/opt/openssl/openssl-1.0.2/certs/cert.pem" > /Users/cj/.bashrc
