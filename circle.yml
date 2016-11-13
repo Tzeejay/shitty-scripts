@@ -1,4 +1,4 @@
 test:
   override:
-    - echo "Really, you're really expecting tests for a repo called \"shitty shell scripts\"?
+    - echo "Really, you're really expecting tests for this repo?
     

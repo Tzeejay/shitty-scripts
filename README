@@ -1,5 +1,7 @@
 ##Shitty shell scripts
 
+[![CircleCI](https://circleci.com/gh/Tzeejay/shitty-scripts.svg?style=svg)](https://circleci.com/gh/Tzeejay/shitty-scripts)
+
 Have you ever felt the need to understand what that fucking package manager you're using is actually doing to your system? Probably not, me neither up until very recently but I felt the need to explore a little and after trying to compile Ruby 2.3.1 by hand I were fed up by weird scripts that paste obscure variables into command calls at runtime.
 
 
