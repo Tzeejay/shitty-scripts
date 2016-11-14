@@ -4,6 +4,7 @@ mkdir -p /src/openssl
 mkdir -p /src/ruby
 mkdir -p /src/chruby
 mkdir -p /src/autoconf
+mkdir -p /opt/rubies/rubgems-update
 
 mkdir -p /opt/openssl
 mkdir -p /opt/rubies
@@ -36,4 +37,12 @@ curl -s https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz | tar -C /src
 
 curl -s https://curl.haxx.se/ca/cacert.pem > /opt/openssl/openssl-1.0.2/certs/cert.pem
 
-echo "export SSL_CERT_FILE=/opt/openssl/openssl-1.0.2/certs/cert.pem" > /Users/cj/.bashrc
+echo "export SSL_CERT_FILE=/opt/openssl/openssl-1.0.2/certs/cert.pem" > /Users/cj/.bash_profile
+
+curl -s https://rubygems.org/downloads/rubygems-update-2.6.7.gem > /opt/rubies/rubygems-update/rubygems-update-2.6.7.gem
+
+sudo gem install --local /opt/rubies/rubygems-update/rubygems-update-2.6.7.gem
+
+update_rubygems --no-ri --no-rdoc
+
+gem uninstall rubygems-update -x
