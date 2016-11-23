@@ -3,20 +3,10 @@
 mkdir -p /src/openssl
 mkdir -p /src/ruby
 mkdir -p /src/chruby
-mkdir -p /src/autoconf
 mkdir -p /opt/rubies/rubgems-update
 
 mkdir -p /opt/openssl
 mkdir -p /opt/rubies
-mkdir -p /opt/autoconf
-
-curl -s http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz | tar -C /src/autoconf/ -xzf - && \
-    cd /src/autoconf/autoconf-2.69 && \
-    sh configure --prefix /opt/autoconf && \
-    make install && \
-    ln -s /src/autoconf/autoconf-2.69/bin/autoconf /usr/local/bin
-    
-
 
 curl -s https://www.openssl.org/source/openssl-1.0.2j.tar.gz | tar -C /src/openssl/ -xzf - && \
     cd /src/openssl/openssl-1.0.2j && \
